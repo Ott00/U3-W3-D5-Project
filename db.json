@@ -4,14 +4,14 @@
       "email": "dario@dario.com",
       "password": "$2a$10$ZLY63quWnMVo0lO951uFdOJRfUxeo8U6YJ/Cue06Vgp4Ad8S/CjaC",
       "name": "Dario",
-      "cognome": "Dadegi",
+      "surname": "Dadegi",
       "id": 1
     },
     {
       "email": "ott@gmail.com",
       "password": "$2a$10$VvtlB30PmLvvDVOdua.e9.PNzwBhmWGQfi8mg4DdsVdy1E6YOoq3O",
-      "nome": "Otman",
-      "cognome": "Karim",
+      "name": "Otman",
+      "surname": "Karim",
       "id": 2
     },
     {
@@ -20,6 +20,13 @@
       "name": "Ale",
       "surname": "Angheben",
       "id": 3
+    },
+    {
+      "email": "luci@gmail.com",
+      "password": "$2a$10$irXaKQ5JYqOT12UGJvDUZOeUjFs1RlZyNWeAA5o0hJJMS.2tIb/5W",
+      "name": "Lucia",
+      "surname": "Ragaini",
+      "id": 4
     }
   ],
   "favorites": [
