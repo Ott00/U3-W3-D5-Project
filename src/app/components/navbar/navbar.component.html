@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-sm bg-dark">
+<nav class="navbar navbar-expand-sm bg-dark sticky-top">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">
       <img
@@ -44,10 +44,19 @@
         </div>
         <div class="d-flex">
           <li class="nav-item" *ngIf="userLogged">
+            <a
+              class="nav-link me-3"
+              [routerLink]="['/profile']"
+              routerLinkActive="active"
+              >Profilo</a
+            >
+          </li>
+          <li class="nav-item" *ngIf="userLogged">
             <button class="btn btn-outline-danger" (click)="logout()">
               Logout
             </button>
           </li>
+
           <li class="nav-item" *ngIf="!userLogged">
             <a
               class="nav-link"

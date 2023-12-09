@@ -36,17 +36,16 @@ export class AuthService {
     // Utilizzato nel caso in cui l'utente abbandoni l'applicazione senza fare logout; se rientra e il token è ancora valido, non dovrà rifare login
     const user = localStorage.getItem('user');
     if (!user) {
-      this.router.navigate(['/login']);
+      // this.router.navigate(['/login']);
       return;
     }
-    console.log('user esiste');
     const userData: AuthData = JSON.parse(user);
     if (this.jwtHelper.isTokenExpired(userData.accessToken)) {
       this.router.navigate(['/login']);
       return;
     }
     this.authSubj.next(userData); // Rientrando nell'applicazione dopo essere usciti, il BehaviourSubject è di nuovo null: in questo modo riceve i valori presenti nel localStorage e comunica di nuovo a user$ la presenza dell'utente
-    console.log('Restore eseguito');
+    console.log('User esiste, restore eseguito');
   }
 
   register(data: User) {

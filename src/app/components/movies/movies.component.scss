@@ -1,0 +1,17 @@
+.card-shadow {
+  filter: drop-shadow(0 0.15rem 0.2rem grey);
+  transition: opacity 0.3s ease-out;
+  cursor: pointer;
+
+  img {
+    transition: all 0.2s ease-in-out;
+  }
+
+  &:hover img {
+    animation: opacity;
+    opacity: 0.95;
+  }
+}
+.shadow-custom {
+  filter: drop-shadow(0 0 0.75rem white);
+}

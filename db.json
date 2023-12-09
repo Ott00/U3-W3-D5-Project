@@ -4,19 +4,49 @@
       "email": "dario@dario.com",
       "password": "$2a$10$ZLY63quWnMVo0lO951uFdOJRfUxeo8U6YJ/Cue06Vgp4Ad8S/CjaC",
       "name": "Dario",
+      "cognome": "Dadegi",
       "id": 1
+    },
+    {
+      "email": "ott@gmail.com",
+      "password": "$2a$10$VvtlB30PmLvvDVOdua.e9.PNzwBhmWGQfi8mg4DdsVdy1E6YOoq3O",
+      "nome": "Otman",
+      "cognome": "Karim",
+      "id": 2
+    },
+    {
+      "email": "ale@gmail.com",
+      "password": "$2a$10$sSXhcHJVkSa.85zwVj1g4en2RCOKIu5fwPXwNSmdInL5Co1vAJ.IG",
+      "name": "Ale",
+      "surname": "Angheben",
+      "id": 3
     }
   ],
   "favorites": [
     {
-      "userId": 1,
       "movieId": 460465,
+      "userId": 1,
       "id": 6
     },
     {
-      "userId": 1,
       "movieId": 632357,
+      "userId": 1,
       "id": 8
+    },
+    {
+      "movieId": 632357,
+      "userId": 1,
+      "id": 9
+    },
+    {
+      "movieId": 567189,
+      "userId": 2,
+      "id": 10
+    },
+    {
+      "movieId": 578701,
+      "userId": 2,
+      "id": 11
     }
   ],
   "movies-popular": [

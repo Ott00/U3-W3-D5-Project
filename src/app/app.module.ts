@@ -13,6 +13,7 @@ import { RegistrationComponent } from './components/registration/registration.co
 import { HomeComponent } from './components/home/home.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { MoviesComponent } from './components/movies/movies.component';
+import { ProfileComponent } from './components/profile/profile.component';
 
 const routes: Route[] = [
   {
@@ -33,6 +34,11 @@ const routes: Route[] = [
     canActivate: [AuthGuard],
   },
   {
+    path: 'profile',
+    component: ProfileComponent,
+    canActivate: [AuthGuard],
+  },
+  {
     path: '**',
     redirectTo: '',
   },
@@ -46,6 +52,7 @@ const routes: Route[] = [
     HomeComponent,
     NavbarComponent,
     MoviesComponent,
+    ProfileComponent,
   ],
   imports: [
     BrowserModule,

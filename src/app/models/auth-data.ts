@@ -3,7 +3,7 @@ export interface AuthData {
   user: {
     name: string;
     email: string;
-    cognome: string;
-    id: number;
+    surname: string;
+    id?: number;
   };
 }
