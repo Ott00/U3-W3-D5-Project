@@ -1,14 +1,17 @@
 <div class="container-fluid bg-black text-white">
   <div class="row px-5 py-3 bg-black d-flex justify-content-center">
-    <div class="row mt-3 px-5 py-3 d-flex justify-content-center">
+    <div class="row mt-2 d-flex justify-content-center">
       <div
         class="col-12 col-md-4 bg-dark d-flex justify-content-center rounded-3"
       >
-        <img src="../../../assets/avatar.png" alt="" />
+        <img
+          class="avatar"
+          src="../../../assets/avatar.png"
+          alt="user avatar image"
+        />
       </div>
-      <div class="col-12 col-md-7 bg-danger p-3 rounded-3 mt-2 mt-md-0 ms-md-2">
-        <h4 class="border-bottom">Information</h4>
-
+      <div class="col-12 col-md-8 bg-danger p-3 rounded-3 mt-2 mt-md-0">
+        <h4 class="border-bottom">Informazioni</h4>
         <div class="row">
           <div class="col-12 col-sm-6">
             <p class="fw-bold fs-6 m-0">Nome</p>
@@ -24,6 +27,34 @@
           </div>
         </div>
       </div>
+    </div>
+    <div class="row mt-2 d-flex justify-content-start">
+      <h4 class="text-center mt-2 m-0">FILM PREFERITI</h4>
+      <ng-container *ngFor="let movie of filteredMovie">
+        <div class="col-6 col-md-4 col-lg-3 gy-4">
+          <div class="card border-0 card-shadow">
+            <img
+              class="card-img-top object-fit-cover h-50"
+              src="http://image.tmdb.org/t/p/w500{{ movie.backdrop_path }}"
+              alt="Title"
+            />
+            <button
+              class="btn btn-primary bg-transparent position-absolute top-0 end-0 m-1 fs-4 border-0"
+              (click)="removeFavorite(movie.id)"
+            >
+              <i class="bi bi-heart-fill shadow-custom text-danger"></i>
+            </button>
+          </div>
+
+          <div class="card-body text-bg-dark rounded-bottom">
+            <div>
+              <h6 class="card-title text-truncate p-2">
+                {{ movie.title }}
+              </h6>
+            </div>
+          </div>
+        </div>
+      </ng-container>
     </div>
   </div>
 </div>
