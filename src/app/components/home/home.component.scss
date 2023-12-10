@@ -34,3 +34,11 @@
     filter: hue-rotate(180deg);
   }
 }
+
+.card {
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    opacity: 0.9;
+    filter: invert(5%);
+  }
+}

@@ -1,39 +1,43 @@
-<div class="bg">
-  <div class="container text-bg-dark mt-5 rounded-2">
-    <form #loginForm="ngForm" (ngSubmit)="login(loginForm)" class="p-5">
-      <div class="mb-3">
-        <label for="email" class="form-label fw-bold">Email</label>
-        <input
-          type="text"
-          class="form-control bg-secondary border-0"
-          id="email"
-          name="email"
-          ngModel
-          required
-        />
-      </div>
-      <div class="mb-3">
-        <label for="password" class="form-label fw-bold">Password</label>
-        <input
-          type="password"
-          class="form-control bg-secondary border-0"
-          id="password"
-          name="password"
-          [minlength]="6"
-          ngModel
-          required
-        />
-      </div>
+<div class="bg container-fluid bg-black">
+  <div class="row px-5 d-flex justify-content-center">
+    <div class="col-6">
+      <div class="text-bg-dark mt-5 rounded-2">
+        <form #loginForm="ngForm" (ngSubmit)="login(loginForm)" class="p-5">
+          <div class="mb-3">
+            <label for="email" class="form-label fw-bold">Email</label>
+            <input
+              type="text"
+              class="form-control bg-secondary border-0"
+              id="email"
+              name="email"
+              ngModel
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label fw-bold">Password</label>
+            <input
+              type="password"
+              class="form-control bg-secondary border-0"
+              id="password"
+              name="password"
+              [minlength]="6"
+              ngModel
+              required
+            />
+          </div>
 
-      <div class="d-flex justify-content-center">
-        <button
-          type="submit"
-          class="btn btn-danger px-5 fw-bold"
-          [disabled]="loginForm.invalid"
-        >
-          Login
-        </button>
+          <div class="d-flex justify-content-center">
+            <button
+              type="submit"
+              class="btn btn-danger px-5 fw-bold"
+              [disabled]="loginForm.invalid"
+            >
+              Login
+            </button>
+          </div>
+        </form>
       </div>
-    </form>
+    </div>
   </div>
 </div>
