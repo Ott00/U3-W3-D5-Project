@@ -1,0 +1,13 @@
+.custom-padding {
+  padding: 5rem;
+
+  a {
+    color: lightgray;
+    text-decoration: none;
+    opacity: 0.4;
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+}

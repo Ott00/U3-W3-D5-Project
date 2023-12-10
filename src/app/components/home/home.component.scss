@@ -1,0 +1,36 @@
+.cover {
+  h1 {
+    font-size: 40px;
+  }
+  .nopadding {
+    padding: 0 !important;
+    margin: 0 !important;
+
+    .hero-img {
+      height: calc(100vh - 300px);
+    }
+  }
+
+  .card-bg {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(
+      157deg,
+      rgb(37, 37, 37) 0%,
+      rgba(0, 0, 0, 1) 50%,
+      rgb(20, 20, 20) 100%
+    );
+
+    .fs-8 {
+      font-size: 13px;
+    }
+  }
+
+  *:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+
+  .accordion-button:not(.collapsed)::after {
+    filter: hue-rotate(180deg);
+  }
+}

@@ -14,6 +14,7 @@ import { HomeComponent } from './components/home/home.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { MoviesComponent } from './components/movies/movies.component';
 import { ProfileComponent } from './components/profile/profile.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 const routes: Route[] = [
   {
@@ -53,6 +54,7 @@ const routes: Route[] = [
     NavbarComponent,
     MoviesComponent,
     ProfileComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

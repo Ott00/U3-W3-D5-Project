@@ -41,7 +41,7 @@ export class MoviesComponent implements OnInit {
     });
   }
 
-  favoriteAction(movieId: number, e: Event) {
+  favoriteAction(movieId: number) {
     let bool = this.isFavorite(movieId);
 
     if (bool) {
